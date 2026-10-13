@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete - Uninassau</title>
+    <!-- Ligação ao ficheiro CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Calculadora de Frete & Entrega</h1>
+            <p>Simule o valor do frete baseado na distância até a Uninassau e Uber Moto[cite: 5]</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Secção do Formulário / Consulta de CEP -->
+        <section class="card">
+            <h2>Insira o CEP de Destino[cite: 5]</h2>
+            <div class="input-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="Ex: 50050-540" maxlength="9">
+            </div>
+            <button id="calcularBtn" class="btn">Calcular Frete</button>
+        </section>
+
+        <!-- Secção do Resultado -->
+        <section id="resultadoSection" class="card hidden">
+            <h2>Detalhes da Entrega</h2>
+            <div class="result-info">
+                <p><strong>Endereço:</strong> <span id="resLogradouro">-</span></p>
+                <p><strong>Bairro / Cidade:</strong> <span id="resBairro">-</span></p>
+                <p><strong>Distância estimada da Uninassau:</strong> <span id="resDistancia">-</span></p>
+                <p><strong>Preço Estimado (Uber Moto):</strong> <span id="resPreco" class="highlight-price">-</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Projeto Académico - Uninassau[cite: 5]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Ligação ao ficheiro JavaScript separado -->
+    <script src="script.js"></script>
+
+</body>
+</html>
